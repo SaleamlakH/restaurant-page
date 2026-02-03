@@ -1,4 +1,5 @@
-import './style.css'
+import './style.css';
+import heroSection from './home.js';
 
-// test everything works fine
-console.log("hello");
+const main = document.querySelector('main');
+main.appendChild(heroSection);
