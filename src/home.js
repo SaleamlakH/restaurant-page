@@ -21,8 +21,4 @@ const createHeroSection = () => {
   return heroSection;
 };
 
-export const appendHome = (container) => {
-  const heroSection = createHeroSection();
-
-  container.append(heroSection);
-};
+export { createHeroSection };
