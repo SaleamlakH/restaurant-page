@@ -1,11 +1,11 @@
 import './style.css';
-import { appendHome } from './home.js';
+import { createHeroSection } from './home.js';
 
 const home = document.querySelector('.home-btn');
 
 const main = document.querySelector('main');
-appendHome(main);
+main.appendChild(createHeroSection());
 
 home.addEventListener('click', () => {
-  appendHome(main);
+  main.replaceChildren(createHeroSection());
 });
